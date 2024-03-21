@@ -1,0 +1,47 @@
+.products_container {
+  max-width: 1100px;
+  .product {
+    display: flex;
+    flex: 1;
+    color: $secondary-color;
+    background-color: #ffffff;
+    .product_thumbnail {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+      margin: 16px;
+
+      img {
+        width: 180px;
+        border-radius: 4px;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+    .product_data {
+      width: 70%;
+
+      .product_data_price {
+        font-size: 24px;
+        margin-top: 16px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .product_data_title {
+        font-size: 18px;
+        margin-top: 16px;
+      }
+    }
+
+    .product_city_name {
+      justify-items: auto;
+      margin: 16px;
+      width: auto;
+      color: #999;
+      font-size: 12px;
+    }
+  }
+}

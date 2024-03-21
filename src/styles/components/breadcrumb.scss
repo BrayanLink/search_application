@@ -1,0 +1,35 @@
+.breadcrumb {
+  padding: 16px 0px;
+  list-style: none;
+
+  .breadcrumb_item {
+    display: inline;
+    font-size: 14px;
+    color: $gray;
+
+    a {
+      text-decoration: none;
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li + li:before {
+    padding: 8px;
+    color: $gray;
+    content: '>\00a0';
+  }
+
+  li:last-child {
+    font-weight: bold;
+  }
+}
